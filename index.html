@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes/No Question</title>
+    <style>
+        body {
+            color: white;
+            background-color: darkred;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .button-container {
+            display: flex;
+            align-items: center;
+        }
+        button {
+            background-color: green;
+            color: white;
+            border: 1px solid white;
+            font-size: 24px;
+            border-radius: 4px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            margin: 0 5px; /* Adjust the margin between buttons */
+            padding: 10px 20px;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+
+        button.red {
+            background-color: red;
+            margin-left: 10px; /* Adjust the initial left margin for proper alignment */
+            position: relative;
+            transition: transform 0.5s ease; /* Add a transition effect for smoother movement */
+        }
+
+        button.red:hover {
+            transform: translate(20px, -200px); 
+            transform: translate(30px, -200px); 
+        }
+    </style>
+</head>
+<body>
+    <h1>Will you be my valentine?</h1>
+    <img src="https://www.meme-arsenal.com/memes/cb1f2483cac11512df799c2bef4957fc.jpg" height="300" width="350">
+    <div class="button-container">
+        <button onclick="redirectToNewPage()">Yes</button>
+        <button class="red">No</button>
+    </div>
+   
+    <script>
+        function redirectToNewPage() {
+            window.location.href = "yess.html"; 
+        }
+    </script>
+</body>
+</html>
+
